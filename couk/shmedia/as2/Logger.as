@@ -1,0 +1,1 @@
+﻿import flash.external.ExternalInterface;class couk.shmedia.as2.Logger {		public function Logger() {}		public static function log(val:Object):Void {		if(ExternalInterface.available) ExternalInterface.call("console.log", val.toString());		else trace(val);	}	}
